@@ -1,0 +1,23 @@
+
+* {
+  margin: 0 auto;
+  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body, html
+ {
+  background-image: url("https://forum.craftersland.net/uploads/monthly_2017_10/rick-and-morty-top-banner-two-1.png.a82332698fcb055607e7475254feb2f3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  background-size: cover;
+   
+  font-family: "Poppins", sans-serif;
+   
+  color: #ffffff80;
+  
+  /* cursor: url("/public/icons8-rick-sanchez-100.png"), default; */
+}

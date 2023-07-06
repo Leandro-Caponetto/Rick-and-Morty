@@ -1,0 +1,104 @@
+
+
+.about{
+    margin-top: 60px;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .card_box {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url('../../assets/images/toonmecom_f9776d.jpeg');
+    background-repeat: no-repeat;
+    margin-top: 40px;
+   text-align: center;
+   background-size: cover;
+    position: relative;
+    box-shadow: 0 2px 7px 12px #0000006e;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .card_box:hover {
+    transform: scale(0.9);
+  }
+  
+  .card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_about {
+    width: 490px;
+    height: 254px;
+    
+    transition: all 0.2s;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .about_inner {
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+    background: rgba(255,255,255,.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.825);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  .card_about:hover {
+    transform: scale(1.04) rotate(1deg);
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#b0e633, #53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  
+  .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }

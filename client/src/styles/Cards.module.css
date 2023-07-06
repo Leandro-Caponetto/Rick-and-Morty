@@ -1,0 +1,58 @@
+/** @format */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  justify-items: center;
+  margin-top: 70px;
+}
+.cards nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: normal;
+  /* justify-content: space-between; */
+  align-items: stretch;
+  background: linear-gradient(
+    315deg,
+    rgba(101, 0, 94, 0.696) 3%,
+    rgba(60, 133, 206, 0.722) 38%,
+    rgba(48, 238, 225, 0.71) 68%,
+    rgba(255, 25, 25, 0.719) 98%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  box-shadow: 0 4px 15px 21px #00000090;
+  border-radius: 4px;
+  margin: 4px 4px;
+  padding: 14px 8px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.cards select {
+  border-radius: 4px;
+  background-color: rgb(199, 226, 240);
+  margin: 4px 4px;
+  margin-bottom: 40px;
+  padding: 4px 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 825px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

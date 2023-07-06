@@ -1,0 +1,122 @@
+.login {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+  
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  width: 450px;
+  background-image: url('../../assets/images/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png');
+  background-repeat: no-repeat;
+  background-size: 400px auto;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ffffffad;
+  box-shadow: 0 4px 7px 12px #00000090;
+  
+  height: 650px;
+}
+@keyframes parpadeo-sombra {
+  0% {
+    filter: drop-shadow(0 8px 20px #39ff14);
+  }
+  50% {
+    filter: drop-shadow(0 8px 20px transparent);
+  }
+  100% {
+    filter: drop-shadow(0 8px 20px #39ff14);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+  /* .login button {
+    background-color: rgb(61, 166, 246);
+    border: 1.5px rebeccapurple solid;
+    border-radius: 4px;
+    margin: 20px 8px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .login button:hover {
+    background-color: rgb(91, 179, 247);
+    border: 1.5px rgb(86, 32, 140) solid;
+  } */
+  .login span {
+      color: red;
+  }
+
+  
+.login button {
+  margin-top: 80px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  border: 1px solid #ffffffad;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  
+  font-size: 19px;
+  font-weight: bold;
+  color: aliceblue;
+  text-shadow: 0 10px 10px #000;
+}
+.login h1{
+  color: aliceblue;
+  text-shadow: 0 10px 10px #000;
+  margin-top: 70px;
+}
+.login label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color:aliceblue;
+  text-shadow: 0 10px 10px #000;
+}
+
+.login button:hover {
+  box-shadow: 2px 2px 12px white;
+}
+  
+  .input {
+    height: 30px;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 2px 2px 12px inset black;
+  }
+  .inputs{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color:aliceblue;
+    text-shadow: 0 10px 10px #000;
+  }
+  .login img {
+    width: 350px;
+    height: auto;
+  }
+
+
+  .nombre{
+    margin-top: 150px;
+    text-shadow: 0 10px 10px #000;
+  }
