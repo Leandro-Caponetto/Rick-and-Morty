@@ -1,7 +1,9 @@
 import React from "react";
-import { connect, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import style from "../styles/Cards.module.css";
 import Card from "./Card";
+import logo from "../assets/images/pngegg.png"
+import  letras from "../assets/images/Rick-and-Morty.png"
 
 import { filterGender, reset, filterAtoZ } from "../redux/actions";
 
@@ -55,6 +57,9 @@ Male, Female, Genderless y unknown.
           </option>
         </select>
         <button onClick={() => dispatch(reset())}>Reset</button>
+        <img className={style.logo} src={logo} alt="" />
+      <img className={style.letras} src={letras} alt="" />
+        
       </nav>
       {myFavorites?.map((char, index) => {
         return <Card key={char.id} char={char} onClose={onClose} inFav={true} />;

@@ -5,7 +5,7 @@
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
   justify-items: center;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .cards nav {
   display: flex;
@@ -40,6 +40,10 @@
     background-position: 0% 0%;
   }
 }
+.cards nav{
+  border: 5px rgb(247, 241, 241) inset;
+  height: 500px;
+}
 
 .cards select {
   border-radius: 4px;
@@ -55,4 +59,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.logo{
+  width: 100px;
+  margin-top: 100px;
+}
+.letras{
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
 }

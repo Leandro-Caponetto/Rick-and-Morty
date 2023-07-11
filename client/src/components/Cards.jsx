@@ -1,10 +1,10 @@
 import Card from "./Card";
 import style from "../styles/Cards.module.css";
 import { useSelector } from "react-redux";
-
+import SearchBar from "./SearchBar";
 import Paginate from "./Paginate";
 
-export default function Cards({ onClose }) {
+export default function Cards({ onSearch, onClose }) {
   const { characters, numPage } = useSelector((state) => state);
 
   
@@ -18,6 +18,7 @@ export default function Cards({ onClose }) {
   const viewCharacters = characters?.slice(desde, hasta);
   return (
     <div>
+      <SearchBar onSearch={onSearch} />
       <div className={style.cards}>
         {/* <h2>Estamos en el home y podemos mostrar y/o ver nuestras cards</h2> */}
         {viewCharacters?.map((char, index) => {

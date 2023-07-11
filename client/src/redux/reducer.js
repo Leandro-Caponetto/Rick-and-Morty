@@ -17,10 +17,10 @@ import {
 const initialState = {
   charactersOrigin: [],
   characters: [],
-  //TODO: para agregar o remover trabajamos en ambos (allFavorites, myFavorites)
-  allFavorites: [], // original de myFavorites
-  //TODO: para filtrar trabajamos solo acá
-  myFavorites: [], // acá va a mirar el component myFavorites
+ 
+  allFavorites: [], 
+  
+  myFavorites: [], 
   numPage: 1,
 };
 
@@ -30,14 +30,13 @@ export default function reducer(state = initialState, { type, payload }) {
       return {
         ...state,
         characters: [payload],
-        // characters: [payload,...state.charactersOrigin],
-        // charactersOrigin: [payload,...state.charactersOrigin],
+       
       };
     case ADD_CHAR:
       if (Array.isArray(payload)) {
         return {
           ...state,
-          characters: [...payload], // characters: [payload, ...state.characters],
+          characters: [...payload],
           charactersOrigin: [...payload],
         };
       }
@@ -56,13 +55,13 @@ export default function reducer(state = initialState, { type, payload }) {
         charactersOrigin: newCharacters,
       };
     case RESET_CHARACTERS:
-      //console.log()
+      
       return {
         ...state,
         characters: [...state.charactersOrigin],
       };
     case RESET_PAGE:
-      //console.log()
+      
       return {
         ...state,
         numPage: 1,

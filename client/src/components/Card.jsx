@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import style from "../styles/Card.module.css";
 
@@ -6,10 +7,12 @@ import { useState } from "react";
 
 import { connect } from "react-redux";
 import { addFav, removeFav } from "../redux/actions";
+import imgen from '../assets/images/pngwing.com.png'
 
 function Card({ char, onClose, myFavorites, removeFav, addFav, inFav }) {
   
   const [isFav, setIsFav] = useState(false);
+
   
   const { id, name, gender, species, origin, image, status } = char;
   const handleFavorite = function () {
@@ -33,6 +36,8 @@ function Card({ char, onClose, myFavorites, removeFav, addFav, inFav }) {
     });
   }, [myFavorites]);
 
+
+
   return (
     <div className={style.card}>
       <div className={style.close}>
@@ -41,7 +46,7 @@ function Card({ char, onClose, myFavorites, removeFav, addFav, inFav }) {
         ) : (
           <button onClick={handleFavorite}>🤍</button>
         )}
-        {inFav ? null : <button onClick={() => onClose(id)}>X</button>}
+        {inFav ? null : <button onClick={() => onClose(id)} >X</button>}
       </div>
       <div className={style.info}>
         <Link className={style.link} to={`/detail/${id}`}>
@@ -56,6 +61,9 @@ function Card({ char, onClose, myFavorites, removeFav, addFav, inFav }) {
           </div>
         </Link>
       </div>
+      <img src={imgen} alt="" className={style.logo}/>
+      <h6>by Leandro Caponetto</h6>
+      <h6>Id: {id}</h6>
     </div>
   );
 }

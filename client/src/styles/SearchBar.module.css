@@ -10,15 +10,15 @@
   padding: 6px 16px;
   margin: 4px;
   margin-right: 8px;
-  background-color: rgb(65, 143, 251);
+  
   box-shadow: 0 15px 21px #00000090;
   cursor: pointer;
   font-size: 14px;
 }
 .search button:hover {
   border: 1px solid #39FF14;
-  color: rgb(15, 41, 125);
-  background-color: rgb(220, 208, 192);
+ 
+  background-color: #00000090;
 }
 .search input {
   padding: 15px 20px;

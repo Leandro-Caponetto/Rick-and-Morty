@@ -1,7 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-
+import imgen from '../assets/images/pngwing.com.png'
 import style from "../styles/Detail.module.css";
 import { useSelector } from "react-redux";
 
@@ -18,7 +19,7 @@ export default function Detail() {
     // return setCharacter({});
   }, [id]);
   return (
-    console.log("char:", character),
+    
     (
       <div className={style.detail}>
         <div className={style.text}>
@@ -28,6 +29,9 @@ export default function Detail() {
           <p>Specie: {character.species}</p>
           <p>Gender: {character.gender}</p>
           <p>Origin: {character.origin?.name}</p>
+          <img src={imgen} alt="" className={style.logo}/>
+
+          <h5>by Leandro Caponetto</h5>
         </div>
         <div className={style.img}>
           <img src={character.image} alt={character.name}></img>
