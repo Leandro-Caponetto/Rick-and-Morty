@@ -5,6 +5,7 @@ import { resetPage, addChar } from "../redux/actions";
 import axios from "axios";
 
 export default function SearchBar({ onSearch }) {
+
   const [id, setId] = useState("");
   const dispatch = useDispatch();
 
@@ -46,7 +47,7 @@ export default function SearchBar({ onSearch }) {
         placeholder="insert id ..."
       />
       <button onClick={add}>Search</button>
-      <button onClick={randomChar}>Random Character</button>
+      <button onClick={randomChar}>Random</button>
     </div>
   );
 }

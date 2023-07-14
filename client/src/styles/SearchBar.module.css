@@ -3,29 +3,32 @@
 .search {
   margin: 8px;
   padding: 8px;
+  
 }
 .search button {
   border: 1px solid #39FF14;
   border-radius: 4px;
   padding: 6px 16px;
   margin: 4px;
+  gap: 10px;
   margin-right: 8px;
-  
-  box-shadow: 0 15px 21px #00000090;
+  box-shadow: 0 15px 21px #000000;
   cursor: pointer;
   font-size: 14px;
 }
 .search button:hover {
   border: 1px solid #39FF14;
- 
-  background-color: #00000090;
+  color: aliceblue;
+  font-weight: 700;
+  scale: 0.9;
+  background-color: #00000056;
 }
 .search input {
-  padding: 15px 20px;
+  padding: 10px 15px;
   outline: none;
   background: transparent;
   border-radius: 8px;
-
+  margin-right: 20px;
   color: #fff;
   box-shadow: 0 15px 21px #00000090;
   border: 1px solid#39FF14;

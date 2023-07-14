@@ -31,16 +31,16 @@ export default function NavBar({  logout }) {
 
       <div className={style.menuItems}>
         <Link className={style.home}  onClick={() => dispatch(resetCharacters())} to={"/home"}>
-         <div>Home</div>
+         <p>Home</p>
         </Link>
         <Link className={style.link} to={"/about"}>
-          <div>About</div>
+          <p>About</p>
         </Link>
         <Link className={style.link} to={"/favorites"}>
-          <div>Favorites</div>
+          <p>Favorites</p>
         </Link>
         <Link className={style.link} to={"/create"}>
-          <div>Create</div>
+          <p>Create</p>
         </Link>
 
       </div>

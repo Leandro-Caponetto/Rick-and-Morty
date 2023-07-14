@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import "./App.css";
 
@@ -114,12 +115,12 @@ export default function App() {
     // console.log("access <<<>>>>>> ", access),
     <>
       {/* <h1>{title}</h1> */}
-      {pathname === "/" ? null : <NavBar logout={logout} onSearch={onSearch} />}
+      {pathname === "/" ? null : <NavBar logout={logout} />}
 
       <Routes>
         <Route path="/" element={<Login login={login} />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/home" element={<Cards onClose={onClose} />}></Route>
+        <Route path="/home" element={<Cards onClose={onClose} onSearch={onSearch} />}></Route>
         <Route
           path="/favorites"
           element={<Favorites onClose={onClose} />}

@@ -4,7 +4,7 @@
   width: 300px;
   height: 500px;
   margin: 30px 20px;
-  box-shadow: 0 4px 15px 21px #00000090;
+  box-shadow: 0 4px 15px 21px #000000fa;
   border: 1px solid #ffffff80;
   color: #ffffff80;
   border-radius: 10px;
@@ -20,6 +20,9 @@
 background-attachment: fixed;
 border: 5px rgb(247, 241, 241) inset;
   
+}
+.card:hover{
+  scale: 0.95;
 }
 @keyframes gradient {
   0% {
@@ -103,4 +106,15 @@ border: 5px rgb(247, 241, 241) inset;
   .logo{
     width: 40px;
     margin-top: 10px;
+    animation: spin 10s linear infinite;
   }
+  @keyframes spin {
+  
+ 
+    0% { transform: rotate(0deg); }
+      
+      
+    
+     
+    100% { transform: rotate(360deg); }
+    }
